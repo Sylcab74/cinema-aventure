@@ -134,6 +134,12 @@ h4{
     color: #FFF;
 }
 
+p{
+    color: #FFF;
+    font-family: 'Halant', serif;
+    font-size: 12px;
+}
+
 .note{
     position: relative;
     width: 40px;
@@ -354,9 +360,50 @@ h4{
     text-transform: capitalize;
 }
 
-
-
 /* END BLOCK ACTUALITIES */
+
+/* BLOCK A SINGLE MOVIE */
+
+.movie{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px;
+    align-items : center;
+}
+
+.trailer{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.trailer video{
+    width: 100%;
+}
+
+.presentation{
+    width: 50%;
+}
+
+.presentation .note{
+    padding: 5px;
+}
+
+.presentation h2{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.presentation .genre{
+    font-style: italic;
+    margin-bottom : 10px;
+}
+
+.presentation .synopsis{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/* END OF A SINGLE MOVIE */ 
 
 
 

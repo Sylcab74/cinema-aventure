@@ -1,6 +1,8 @@
 <template>
-    <HeaderComponent />
-    <MovieComponent></MovieComponent>
+    <div>
+        <HeaderComponent />
+        <MovieComponent />
+    </div>
 </template>
 
 
@@ -12,7 +14,7 @@ export default {
   name: 'Movies',
   components: {
     HeaderComponent,
-    MovieComponent
+    MovieComponent,
   },
 };
 </script>
