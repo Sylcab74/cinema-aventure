@@ -43,6 +43,11 @@ export default new Router({
       name: 'Partners',
       component: Partners,
     },
+    {
+      path: '/movies',
+      name: 'Movies',
+      component: Movies,
+    },
   ],
   mode: 'history',
 });
