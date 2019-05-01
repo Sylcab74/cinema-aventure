@@ -5,7 +5,6 @@ import Vuex from 'vuex';
 import Home from '@/pages/Home';
 import Movies from '@/pages/Movies';
 import Movie from '@/pages/Movie';
-
 import 'vue-glide-js/dist/vue-glide.css';
 
 Vue.use(Router);
@@ -32,6 +31,11 @@ export default new Router({
     {
       path: '*',
       redirect: '/',
+    },
+    {
+      path: '/movies',
+      name: 'Movies',
+      component: Movies,
     },
   ],
   mode: 'history',
