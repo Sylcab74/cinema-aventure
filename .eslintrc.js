@@ -30,6 +30,7 @@ module.exports = {
       js: 'never',
       vue: 'never'
     }],
+    'max-len': ["error", { "code": 1000 }],
     "linebreak-style": 0,
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions

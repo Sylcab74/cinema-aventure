@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <HeaderComponent/>
-    <MovieComponent/>
-  </div>
+    <div>
+        <HeaderComponent />
+        <MovieComponent />
+    </div>
 </template>
 
 

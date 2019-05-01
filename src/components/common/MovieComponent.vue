@@ -1,63 +1,23 @@
 <template>
-    <header id='header'>
-        <nav>
-            <a class="logo" :href="link">
-                <img :src="image.src" alt="Logo">
-            </a>
-            <ul class="menu">
-                <li v-for="headerLink in headerLinks" :key="headerLink.id">
-                    <a :href="headerLink.link">
-                        {{ headerLink.title }}
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="movie">
+        <div class="trailer">
+          <video controls src="video.ogv">Trailer Avengers</video>
+        </div>
+        <div class="presentation">
+          <span class="note">4.3/5</span>
+          <h2 class="title">Avengers</h2>
+          <p class="genre">Action/Aventure</p>
+          <p class="synopsis">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</p>
+        </div>
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'HeaderComponent',
+  name: 'MovieComponent',
   data() {
     return {
-      link: '/',
-      message: 'Blabla',
-      headerLinks: [
-        {
-          id: 1,
-          title: 'Présentation',
-          link: '#',
-        },
-        {
-          id: 2,
-          title: 'Infos pratiques',
-          link: '#',
-        },
-        {
-          id: 3,
-          title: 'Programme',
-          link: '#',
-        },
-        {
-          id: 4,
-          title: 'Nos partenaires',
-          link: '#',
-        },
-        {
-          id: 5,
-          title: 'Inscrire un film',
-          link: '#',
-        },
-        {
-          id: 6,
-          title: 'Archives',
-          link: '#',
-        },
-      ],
-      image: {
-        id: 1,
-        src: './static/images/logo.png',
-      },
+
     };
   },
 };
