@@ -17,6 +17,11 @@ export default new Router({
       name: 'Movies',
       component: Movies,
     },
+    {
+      path: '/movies',
+      name: 'Movies',
+      component: Movies,
+    },
   ],
   mode: 'history',
 });
