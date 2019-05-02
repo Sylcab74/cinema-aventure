@@ -4,7 +4,11 @@ import VueGlide from 'vue-glide-js';
 import Vuex from 'vuex';
 import Home from '@/pages/Home';
 import Movies from '@/pages/Movies';
+<<<<<<< HEAD
 import Movie from '@/pages/Movie';
+=======
+import VueGlide from 'vue-glide-js';
+>>>>>>> Trying to create slider)
 import 'vue-glide-js/dist/vue-glide.css';
 
 Vue.use(Router);
