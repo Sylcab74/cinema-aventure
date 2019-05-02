@@ -403,6 +403,41 @@ p{
     line-height: 25px;
 }
 
+ul.glide__slides{
+    margin: 0 30px;
+}
+
+li.glide__slide{
+   margin-right: 15px !important; 
+}
+
+.glide__slide--active {
+    background-color: #497cdd !important;
+}
+
+div[data-glide-el="controls"] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+}
+
+button[data-glide-dir="<"], button[data-glide-dir=">"] {
+    position: absolute;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #eee;
+    opacity: .3;
+    color: #000;
+    cursor: pointer;
+}
+
+button[data-glide-dir=">"] {
+    right: 5px;
+}
+
 /* END OF A SINGLE MOVIE */ 
 
 
