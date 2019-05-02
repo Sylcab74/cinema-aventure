@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="background-color: #555;">
         <HeaderComponent />
         <MovieComponent />
     </div>
@@ -18,3 +18,4 @@ export default {
   },
 };
 </script>
+
