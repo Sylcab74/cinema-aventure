@@ -14,7 +14,7 @@
     <div>
       <vue-glide :bound="true" :perView="5" v-model="active">
         <vue-glide-slide v-for="movie in movies" :key="movie.id">
-          <div @click="changeSlide">
+          <div @click="changeSlide(movie.id)">
             <span class="note">{{movie.note}}</span>
             <h2 class="title">{{movie.title}}</h2>
             <p class="genre">{{movie.gender}}</p>
@@ -83,8 +83,12 @@ export default {
   },
   methods: {
 
-    changeSlide: () => {
-      
+    changeSlide(id) {
+      // eslint-disable-next-line no-console
+      console.log(this.active);
+      // eslint-disable-next-line no-console
+      console.log(id);
+      this.active = id - 1;
     },
 
   },
