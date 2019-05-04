@@ -440,6 +440,47 @@ button[data-glide-dir=">"] {
 
 /* END OF A SINGLE MOVIE */ 
 
+/* Part our partners */
+
+.page-title{
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.separator{
+    width: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.partners{
+    display: flex;
+    justify-content : space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.partner{
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.partner .title{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.partner .description{
+    padding: 0 10px;
+}
+
+.partner img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* end of partners */
 
 
 
