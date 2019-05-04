@@ -4,6 +4,7 @@ import Home from '@/pages/Home';
 import HelloWorld from '@/components/HelloWorld';
 import Movies from '@/pages/Movies';
 import Partners from '@/pages/Partners';
+import RegisterMovies from '@/pages/RegisterMovies';
 import VueGlide from 'vue-glide-js';
 import 'vue-glide-js/dist/vue-glide.css';
 
@@ -31,6 +32,11 @@ export default new Router({
       path: '/partners',
       name: 'Partners',
       component: Partners,
+    },
+    {
+      path: '/register',
+      name: 'RegisterMovies',
+      component: RegisterMovies,
     },
   ],
   mode: 'history',

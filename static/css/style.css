@@ -482,6 +482,37 @@ button[data-glide-dir=">"] {
 
 /* end of partners */
 
+/*Page form movie */
+
+.register form{
+    margin: 30px;
+}
+
+.register form input[type="text"],.register form input[type="number"],.register form textarea{
+    display: block;
+}
+
+.register form input[type="text"],.register form input[type="number"],.register form textarea{
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.register form .required{
+    color: red;
+}
+
+.register form input[type="submit"]{
+   background-color:  #2E2727;
+   border: #2E2727;
+   color: #fff;
+   border-radius: 5px;
+   display: block;
+   margin : 0 auto;
+   padding: 5px 10px;
+}
+
+/*End of form movie */
+
 
 
 
