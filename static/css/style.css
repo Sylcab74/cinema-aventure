@@ -440,7 +440,22 @@ button[data-glide-dir=">"] {
 
 /* END OF A SINGLE MOVIE */ 
 
+/* Page events */
 
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* End of events */
 
 
