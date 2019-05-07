@@ -34,19 +34,13 @@ export default new Router({
       redirect: '/',
     },
     {
-      path: '/movies',
-      name: 'Movies',
-      component: Movies,
-    },
-    {
       path: '/partners',
       name: 'Partners',
       component: Partners,
     },
     {
-      path: '/movies',
-      name: 'Movies',
-      component: Movies,
+      path: '*',
+      redirect: '/',
     },
   ],
   mode: 'history',
