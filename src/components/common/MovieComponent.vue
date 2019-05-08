@@ -23,7 +23,18 @@
           <p class="genre">{{movies[active].gender}}</p>
           <p class="synopsis">{{movies[active].synopsis}}</p>
           <a :href="movieLink" v-if="showMore">En savoir plus</a>
-          <button v-if="like">J'aime</button>
+          <button v-if="like" @click="popinLike" :disabled="disabled">J'aime</button>
+        </div>
+        <div class="modal" v-if="show">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close" @click="hidePopin">&times;</span>
+              <h2>Merci de votre avis</h2>
+            </div>
+            <div class="modal-body">
+              <p>Votre like a bien été pris en compte.</p>
+            </div>
+          </div>
         </div>
     </div>
   </div>
@@ -105,8 +116,19 @@ export default {
           synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
         },
       ],
+      disabled: false,
+      show: false,
       link: store.getters.movieLink,
     };
+  },
+  methods: {
+    popinLike() {
+      this.disabled = true;
+      this.show = true;
+    },
+    hidePopin() {
+      this.show = false;
+    },
   },
   computed: {
     id() {
