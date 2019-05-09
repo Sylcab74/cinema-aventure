@@ -1,10 +1,11 @@
 <template>
-    <div style="background-color: #555;">
-        <HeaderComponent />
-        <h2 class="page-title">Nos partenaires</h2>
-        <hr class="separator"/>
-        <Partner />
-    </div>
+  <div style="background-color: #F0F0F0; position: relative;">
+    <HeaderComponent />
+    <div class="overlay"></div>
+    <h2 class="page-title">Nos partenaires</h2>
+    <hr class="separator" />
+    <Partner />
+  </div>
 </template>
 
 
@@ -20,4 +21,3 @@ export default {
   },
 };
 </script>
-

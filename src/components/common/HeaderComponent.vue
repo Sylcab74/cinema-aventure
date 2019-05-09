@@ -56,7 +56,7 @@ export default {
       ],
       image: {
         id: 1,
-        src: './static/images/logo.png',
+        src: '/static/images/logo.png',
       },
     };
   },

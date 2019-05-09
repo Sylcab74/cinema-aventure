@@ -1,9 +1,9 @@
 <template>
     <div style="background-color: #555;">
         <HeaderComponent />
-
-        <MovieComponent :showMore="true" />
-        <SliderComponent />
+        <MovieComponent :like="true" :active="$route.params.id" :single="true"/>
+        <StaffComponent :movie="$route.params.id"/>
+        <a href="/movies">Voir tous les films</a>
     </div>
 </template>
 
@@ -11,14 +11,14 @@
 <script>
 import HeaderComponent from '@/components/common/HeaderComponent';
 import MovieComponent from '@/components/common/MovieComponent';
-import SliderComponent from '@/components/common/SliderComponent';
+import StaffComponent from '@/components/common/StaffComponent';
 
 export default {
-  name: 'Movies',
+  name: 'Movie',
   components: {
     HeaderComponent,
     MovieComponent,
-    SliderComponent,
+    StaffComponent,
   },
 };
 </script>
