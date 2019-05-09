@@ -109,6 +109,89 @@ header nav .menu li{
 
 /* END HEADER */
 
+/* FOOTER */
+
+footer{
+    padding: 30px 0;
+    background-color: #F0F0F0;
+    border-top: 1px solid #2E2727;
+}
+
+footer nav .menu{
+    text-align: center;
+}
+
+footer nav .menu li a{
+    display: block;
+    font-family: 'Halant', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    color: #000;
+}
+
+footer nav .menu li a:hover{
+    text-decoration: underline;
+}
+
+footer .socialList{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+
+footer .socialList li{
+    position: relative;
+    width: 65px;
+    height: 65px;
+    padding: 5px;
+    background-color: #fff;
+    margin-right: 70px;
+    border-radius: 5px;
+}
+
+footer .socialList a{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #2E2727;
+    border-radius: 5px;
+}
+
+footer .socialList a .socialOverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.23);
+}
+
+footer .socialList li:last-of-type{
+    margin-right: 0;
+}
+
+footer .socialList li img{
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .copyright{
+    display: block;
+    font-family: 'Halant', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    color: #000;
+    text-align: center;
+}
+
+/* END FOOTER */
+
 /* GLOBALS */
 
 h2{
@@ -422,6 +505,8 @@ div[data-glide-el="controls"] {
     top: 40%;
 }
 
+
+
 button[data-glide-dir="<"], button[data-glide-dir=">"] {
     position: absolute;
     border: 0;
@@ -440,20 +525,137 @@ button[data-glide-dir=">"] {
 
 /* END OF A SINGLE MOVIE */ 
 
-/* Page events */
+/* Modal page movie */
 
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+ /* Modal Header */
+.modal-header {
+  padding: 2px 5px;
+  background-color: #000;
+  color: white;
+}
+
+.modal-header h2{
+    margin : 10px 0;
+    text-decoration: none;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 10px 16px;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.modal-content .modal-body p{
+    color: #000;
+}
+
+.modal-content .close{
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+} 
+/* Part our partners */
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.page-title{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.separator{
+    width: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    position: relative;
+    z-index: 2;
+}
+
+.partners{
+    position: relative;
+    z-index: 2;
+    padding: 0 40px;
+    display: flex;
+    justify-content : space-between;
+    flex-wrap: wrap;
+    margin: 50px 0 0 0;
+}
+
+.partner{
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.partner .title{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.partner .description{
+    padding: 0 10px;
+}
+
+.partner img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* end of partners */
+
+/* End modal */
+
+#map { 
+    height: 180px; 
 }
 
 /* End of events */
