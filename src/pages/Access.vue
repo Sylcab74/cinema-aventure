@@ -12,6 +12,7 @@
 import HeaderComponent from '@/components/common/HeaderComponent';
 import PriceComponent from '@/components/common/PriceComponent';
 import MapComponent from '@/components/common/MapComponent';
+import FooterComponent from '@/components/common/FooterComponent';
 
 export default {
   name: 'Access',
@@ -19,6 +20,7 @@ export default {
     HeaderComponent,
     MapComponent,
     PriceComponent,
+    FooterComponent,
   },
 };
 </script>

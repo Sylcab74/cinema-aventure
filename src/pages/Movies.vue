@@ -13,6 +13,7 @@
 import HeaderComponent from '@/components/common/HeaderComponent';
 import MovieComponent from '@/components/common/MovieComponent';
 import SliderComponent from '@/components/common/SliderComponent';
+import FooterComponent from '@/components/common/FooterComponent';
 
 export default {
   name: 'Movies',
@@ -20,6 +21,7 @@ export default {
     HeaderComponent,
     MovieComponent,
     SliderComponent,
+    FooterComponent,
   },
 };
 </script>

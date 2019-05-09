@@ -10,12 +10,14 @@
 <script>
 import HeaderComponent from '@/components/common/HeaderComponent';
 import EventComponent from '@/components/common/EventComponent';
+import FooterComponent from '@/components/common/FooterComponent';
 
 export default {
   name: 'Events',
   components: {
     HeaderComponent,
     EventComponent,
+    FooterComponent,
   },
 };
 </script>

@@ -13,12 +13,14 @@
 <script>
 import HeaderComponent from '@/components/common/HeaderComponent';
 import Partner from '@/components/common/Partner';
+import FooterComponent from '@/components/common/FooterComponent';
 
 export default {
   name: 'Partners',
   components: {
     HeaderComponent,
     Partner,
+    FooterComponent,
   },
 };
 </script>
