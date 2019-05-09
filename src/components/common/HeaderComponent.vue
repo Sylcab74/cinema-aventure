@@ -21,37 +21,36 @@ export default {
   data() {
     return {
       link: '/',
-      message: 'Blabla',
       headerLinks: [
         {
           id: 1,
           title: 'Présentation',
-          link: '#',
+          link: '/movies',
         },
         {
           id: 2,
           title: 'Infos pratiques',
-          link: '#',
+          link: '/access',
         },
         {
           id: 3,
           title: 'Programme',
-          link: '#',
+          link: '/events',
         },
         {
           id: 4,
           title: 'Nos partenaires',
-          link: '#',
+          link: '/partners',
         },
         {
           id: 5,
           title: 'Inscrire un film',
-          link: '#',
+          link: '/register',
         },
         {
           id: 6,
           title: 'Archives',
-          link: '#',
+          link: '/movies',
         },
       ],
       image: {

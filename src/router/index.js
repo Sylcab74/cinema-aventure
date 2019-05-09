@@ -47,23 +47,9 @@ export default new Router({
       component: Partners,
     },
     {
-      path: '*',
-      redirect: '/',
-    },
-    {
-      path: '/movies',
-      name: 'Movies',
-      component: Movies,
-    },
-    {
       path: '/events',
       name: 'Events',
       component: Events,
-    },
-    {
-      path: '/movies',
-      name: 'Movies',
-      component: Movies,
     },
     {
       path: '/partners',
