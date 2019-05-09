@@ -18,7 +18,7 @@
       </ul>
     </div>
     <div class="blockView">
-      <iframe 
+      <iframe
         width="700"
         height="394"
         :src="movie.trailer"
