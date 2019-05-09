@@ -3,6 +3,7 @@
         <HeaderComponent />
         <MapComponent />
         <PriceComponent />
+        <FooterComponent/>
     </div>
 </template>
 

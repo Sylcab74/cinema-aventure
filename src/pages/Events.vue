@@ -2,6 +2,7 @@
     <div style="background-color: #555;">
         <HeaderComponent />
         <EventComponent />
+        <FooterComponent/>
     </div>
 </template>
 

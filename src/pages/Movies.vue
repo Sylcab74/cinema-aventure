@@ -4,6 +4,7 @@
 
         <MovieComponent :showMore="true" />
         <SliderComponent />
+        <FooterComponent/>
     </div>
 </template>
 

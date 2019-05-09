@@ -5,6 +5,7 @@
     <h2 class="page-title">Nos partenaires</h2>
     <hr class="separator" />
     <Partner />
+    <FooterComponent/>
   </div>
 </template>
 

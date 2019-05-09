@@ -2,6 +2,7 @@
     <div style="background-color: #555;">
         <HeaderComponent />
         <MovieForm />
+        <FooterComponent/>
     </div>
 </template>
 
