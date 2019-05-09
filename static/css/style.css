@@ -652,5 +652,9 @@ button[data-glide-dir=">"] {
 
 /* End modal */
 
+#map { 
+    height: 180px; 
+}
+
 
 
