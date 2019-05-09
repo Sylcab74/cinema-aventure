@@ -66,7 +66,7 @@ export default {
     },
     closeEvent() {
       this.showDialog = false;
-    }
+    },
   },
 };
 </script>
