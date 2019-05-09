@@ -2,12 +2,12 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Vuex from 'vuex';
 import Home from '@/pages/Home';
+import Events from '@/pages/Events';
 import Movies from '@/pages/Movies';
 import Movie from '@/pages/Movie';
 import Partners from '@/pages/Partners';
 import VueGlide from 'vue-glide-js';
 import Access from '@/pages/Access';
-
 import 'vue-glide-js/dist/vue-glide.css';
 
 Vue.use(Router);
@@ -48,6 +48,16 @@ export default new Router({
     {
       path: '*',
       redirect: '/',
+    },
+    {
+      path: '/movies',
+      name: 'Movies',
+      component: Movies,
+    },
+    {
+      path: '/events',
+      name: 'Events',
+      component: Events,
     },
   ],
   mode: 'history',

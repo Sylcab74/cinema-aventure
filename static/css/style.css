@@ -505,6 +505,8 @@ div[data-glide-el="controls"] {
     top: 40%;
 }
 
+
+
 button[data-glide-dir="<"], button[data-glide-dir=">"] {
     position: absolute;
     border: 0;
@@ -656,5 +658,6 @@ button[data-glide-dir=">"] {
     height: 180px; 
 }
 
+/* End of events */
 
 
