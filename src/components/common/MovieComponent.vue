@@ -1,8 +1,17 @@
 <template>
-  <div>
+  <div style="position:relative">
+    <div v-if="!single" class="backgroundTest" v-bind:style="{ backgroundImage: 'url(' + movies[id].images + ')' }"></div>
+    <div v-else class="backgroundTest" v-bind:style="{ backgroundImage: 'url(' + movies[active].images + ')' }"></div>
     <div v-if="!single" class="movie">
         <div class="trailer" >
-          <video controls :src="movies[id].trailer">Trailer {{movies[id].title}}</video>
+          <iframe
+            width="700"
+            height="394"
+            :src="movies[id].trailer"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
         </div>
         <div class="presentation">
           <span class="note">{{movies[id].note}}/5</span>
@@ -15,7 +24,14 @@
     </div>
     <div v-else class="movie single">
         <div class="trailer" >
-          <video controls :src="movies[active].trailer">Trailer {{movies[active].title}}</video>
+          <iframe
+            width="700"
+            height="394"
+            :src="movies[id].trailer"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
         </div>
         <div class="presentation">
           <span class="note">{{movies[active].note}}/5</span>
@@ -69,27 +85,31 @@ export default {
       movies: [
         {
           id: 1,
-          trailer: '/static/video/video.ovg',
+          trailer: 'http://www.youtube.com/embed/oKStYmMgNRA?autoplay=1&controls=0',
           title: 'Avengers',
           note: '4,3',
           gender: 'Action/Aventure',
           synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
+          images: './static/images/imgDesktop.jpg',
         },
         {
           id: 2,
-          trailer: '/static/video/video.ovg',
+          trailer: 'https://www.youtube.com/embed/GokKUqLcvD8?autoplay=1&controls=0',
           title: 'Batman',
           note: '4,3',
           gender: 'Action/Aventure',
           synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
+          images: './static/images/batman.jpg',
         },
         {
           id: 3,
-          trailer: '/static/video/video.ovg',
+          trailer: 'https://www.youtube.com/embed/T6DJcgm3wNY?autoplay=1&controls=0',
           title: 'Superman',
           note: '4,3',
           gender: 'Action/Aventure',
           synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
+          images: './static/images/superman.jpg',
+
         },
         {
           id: 4,
@@ -98,6 +118,8 @@ export default {
           note: '4,3',
           gender: 'Action/Aventure',
           synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
+          images: './static/images/affiche.jpg',
+
         },
         {
           id: 5,
@@ -106,6 +128,8 @@ export default {
           note: '4,3',
           gender: 'Action/Aventure',
           synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
+          images: './static/images/affiche.jpg',
+
         },
         {
           id: 6,
@@ -114,6 +138,8 @@ export default {
           note: '4,3',
           gender: 'Action/Aventure',
           synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
+          images: './static/images/affiche.jpg',
+
         },
       ],
       disabled: false,

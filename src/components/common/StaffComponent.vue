@@ -2,18 +2,20 @@
   <div class="staff">
         <div class="actors">
           <h3>Acteurs : </h3>
-          <hr>
           <div v-for="actor in filterActorsByMovie(movie)" :key="actor.id" class="actor">
-            <img :src="actor.photo" alt="actor.prenom">
+            <div class="image">
+              <img :src="actor.photo" alt="actor.prenom">
+            </div>
             <p class="firstname">{{actor.firstname}}</p>
             <p class="lastname">{{actor.lastname}}</p>
           </div>
         </div>
         <div class="filmmakers">
           <h3>Réalisateurs : </h3>
-          <hr>
           <div v-for="filmmaker in filterFilmMakerByMovie(movie)" :key="filmmaker.id" class="filmmaker">
-            <img :src="filmmaker.photo" alt="filmmaker.prenom">
+            <div class="image">
+              <img :src="filmmaker.photo" alt="filmmaker.prenom">
+            </div>
             <p class="firstname">{{filmmaker.firstname}}</p>
             <p class="lastname">{{filmmaker.lastname}}</p>
           </div>

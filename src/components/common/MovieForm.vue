@@ -16,7 +16,7 @@
           <label for="society">Société de production <span class="required"> *</span> :</label>
           <input id="mon_id" type="text" placeholder="Société de production"/>
           <label for="resume">Résumé :</label>
-          <textarea id="resume" name="resume" rows="5" cols="50">It was a dark and stormy night...</textarea>
+          <textarea id="resume" name="resume" rows="5" cols="50"></textarea>
           <input type="submit" value="Envoyer">
         </form>
     </div>

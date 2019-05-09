@@ -45,6 +45,7 @@ table {
 
 a{
     text-decoration: none;
+    color: #fff;
 }
 
 *{
@@ -119,6 +120,8 @@ footer{
     padding: 30px 0;
     background-color: #F0F0F0;
     border-top: 1px solid #2E2727;
+    position: relative;
+    z-index: 2;
 }
 
 footer nav .menu{
@@ -243,6 +246,19 @@ p{
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+}
+
+.bgNoImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-image: url(../../static/images/bgNoImage.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 /* END GLOBALS */
 
@@ -457,6 +473,8 @@ p{
     justify-content: space-around;
     margin: 50px 20px;
     align-items : center;
+    position: relative;
+    z-index: 2;
 }
 
 .trailer{
@@ -470,6 +488,11 @@ p{
 
 .presentation{
     width: 50%;
+}
+
+.presentation a{
+    color: #fff;
+    text-decoration: underline;
 }
 
 .presentation .note{
@@ -572,12 +595,29 @@ button[data-glide-dir=">"] {
 
 /*Page form movie */
 
+.register{
+    position: relative;
+    z-index: 2;
+}
+
 .register form{
-    margin: 30px;
+    margin: 30px auto;
+    width: 300px;
+}
+
+label{
+    color: #fff;
+    font-family: 'Halant', serif;
 }
 
 .register form input[type="text"],.register form input[type="number"],.register form textarea{
     display: block;
+    width: 100%;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .register form input[type="text"],.register form input[type="number"],.register form textarea{
@@ -733,6 +773,105 @@ button[data-glide-dir=">"] {
     height: 180px; 
 }
 
+.map{
+    width: 900px;
+    height: 450px;
+    margin: 30px auto;
+    background-image: url(../../static/images/map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 /* End of events */
 
+/* page access */
+
+.price{
+    position: relative;
+    z-index: 2;
+    padding: 0 40px;
+    margin-bottom: 30px;
+
+}
+
+.priceBlockContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceBlock{
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    background-color: #F0F0F0;
+    border-radius: 4px;
+}
+
+.priceBlock h3{
+    font-family: 'Halant';
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.prices{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: lowercase;
+    text-align: left;
+}
+
+/* page movie */
+.slider{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backgroundTest{
+    position: absolute;
+    top: -110px;
+    left: 0;
+    width: 100%;
+    height: 195%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* staff */
+
+.staff{
+    position: relative;
+    display: flex;
+    z-index: 2;
+    padding: 0 40px;
+    margin-bottom: 30px;
+}
+
+.actors{
+    margin-right: 80px;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 

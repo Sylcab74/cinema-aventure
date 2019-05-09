@@ -1,7 +1,7 @@
 <template>
     <div style="background-color: #555;">
         <HeaderComponent />
-
+        <div class="overlay"></div>
         <MovieComponent :showMore="true" />
         <SliderComponent />
         <FooterComponent/>

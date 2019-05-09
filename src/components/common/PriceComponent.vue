@@ -1,14 +1,15 @@
 <template>
   <div class="price">
     <h2>Tarifs des entrées : </h2>
-    <hr>
-    <div v-for="price in prices" :key="price.id">
+    <div class="priceBlockContainer">
+      <div class="priceBlock" v-for="price in prices" :key="price.id">
       <h3>{{ price.title }}</h3>
       <ul>
         <li class="prices" v-for="(price,index) in price.price" :key="index">
           {{ price }}
         </li>
       </ul>
+    </div>
     </div>
   </div>
 

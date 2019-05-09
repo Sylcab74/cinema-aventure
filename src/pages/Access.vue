@@ -1,6 +1,10 @@
 <template>
-    <div style="background-color: #555;">
+    <div style="background-color: #555; position: relative">
         <HeaderComponent />
+        <div class="overlay"></div>
+        <div class="bgNoImage"></div>
+        <h2 class="page-title">Accès & tarifs</h2>
+        <hr class="separator" />
         <MapComponent />
         <PriceComponent />
         <FooterComponent/>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="slider">
     <vue-glide :perView="5" v-model="active">
       <vue-glide-slide v-for="movie in movies" :key="movie.id">
         <div @click="changeMovie(movie.id - 1)">

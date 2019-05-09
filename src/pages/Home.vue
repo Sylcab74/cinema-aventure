@@ -2,6 +2,7 @@
   <div>
     <HeaderComponent />
     <HomeCarouselComponent />
+    <div class="overlay"></div>
     <FooterComponent/>
   </div>
 </template>
