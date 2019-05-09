@@ -47,11 +47,6 @@ export default {
           title: 'Inscrire un film',
           link: '/register',
         },
-        {
-          id: 6,
-          title: 'Archives',
-          link: '/movies',
-        },
       ],
       image: {
         id: 1,
