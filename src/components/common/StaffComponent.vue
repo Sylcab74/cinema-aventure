@@ -33,7 +33,7 @@ export default {
       actors: [
         {
           id: 1,
-          idMovie: 1,
+          idMovie: 0,
           photo: '/static/images/index.jpg',
           firstname: 'Robert',
           lastname: 'Downey',
@@ -91,7 +91,7 @@ export default {
       filmmakers: [
         {
           id: 1,
-          idMovie: 1,
+          idMovie: 0,
           photo: '/static/images/index.jpg',
           firstname: 'Robert',
           lastname: 'Downey',

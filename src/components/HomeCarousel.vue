@@ -8,11 +8,11 @@
       <ul class="listFilms">
         <li class="item" v-for="movie in movies.slice(0,6)" :key="movie.id">
           <div class="note">
-            <p>{{ movie.rate }}/5</p>
+            <p>{{ movie.note }}/5</p>
           </div>
           <div>
             <h3>{{ movie.title }}</h3>
-            <h4>{{ movie.category }}</h4>
+            <h4>{{ movie.gender }}</h4>
           </div>
         </li>
       </ul>
@@ -29,11 +29,11 @@
         <div class="filmDescription">
           <div class="filmTitleNote">
             <div class="note">
-              <p>{{ movie.rate }}/5</p>
+              <p>{{ movie.note }}/5</p>
             </div>
             <h3>{{ movie.title }}</h3>
           </div>
-          <h4>{{ movie.title }}</h4>
+          <h4>{{ movie.gender }}</h4>
           <p>{{ movie.description }}</p>
       </div>
     </div>
@@ -48,63 +48,64 @@ export default {
       movies: [
         {
           id: 1,
-          title: 'Ta mère',
-          rate: 4,
-          category: 'Action / Aventure / Science Fiction',
+          title: 'Avengers',
+          note: '4,3',
+          gender: 'Action/Aventure',
+          synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
         },
         {
           id: 2,
-          title: 'Ta mère le retour',
-          rate: 5,
-          category: 'Action / Aventure / Science Fiction',
+          trailer: '/static/video/video.ovg',
+          title: 'Batman',
+          note: '4,3',
+          gender: 'Action/Aventure',
+          synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
         },
         {
           id: 3,
-          title: '7 grosse pute',
-          rate: 2,
-          category: 'Action / Aventure / Science Fiction',
+          trailer: '/static/video/video.ovg',
+          title: 'Superman',
+          note: '4,3',
+          gender: 'Action/Aventure',
+          synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
         },
         {
           id: 4,
-          title: 'un test',
-          rate: 4,
-          category: 'Action / Aventure / Science Fiction',
+          trailer: '/static/video/video.ovg',
+          title: 'Iron man',
+          note: '4,3',
+          gender: 'Action/Aventure',
+          synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
         },
         {
           id: 5,
-          title: 'Objectif expedition',
-          rate: 4,
-          category: 'Action / Aventure / Science Fiction',
+          trailer: '/static/video/video.ovg',
+          title: 'Kill bill',
+          note: '4,3',
+          gender: 'Action/Aventure',
+          synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
         },
         {
           id: 6,
-          title: 'Ta mère',
-          rate: 4,
-          category: 'Action / Aventure / Science Fiction',
+          trailer: '/static/video/video.ovg',
+          title: 'Star wars',
+          note: '4,3',
+          gender: 'Action/Aventure',
+          synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
         },
         {
-          id: 6,
-          title: 'Ta mère',
-          rate: 4,
-          category: 'Action / Aventure / Science Fiction',
-        },
-        {
-          id: 7,
-          title: 'Ta mère',
-          rate: 4,
-          category: 'Action / Aventure / Science Fiction',
-        },
-        {
-          id: 8,
-          title: 'Ta mère',
-          rate: 4,
-          category: 'Action / Aventure / Science Fiction',
+          id: 5,
+          trailer: '/static/video/video.ovg',
+          title: 'Kill bill',
+          note: '4,3',
+          gender: 'Action/Aventure',
+          synopsis: 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.',
         },
         {
           id: 8,
-          title: 'Ta mère',
-          rate: 4,
-          category: 'Action / Aventure / Science Fiction',
+          title: 'Avengers',
+          note: 4.3,
+          gender: 'Action / Aventure',
           description: `Après leur défaite face au Titan Thanos qui dans le film précédent s'est approprié
             toutes les pierres du Gant de l'infini , les Avengers et les Gardiens de la Galaxie
             ayant survécu à son claquement de doigts qui a pulvérisé « la moitié de toute forme
@@ -117,9 +118,9 @@ export default {
       ],
       movie: {
         id: 8,
-        title: 'Ta mère',
-        rate: 4,
-        category: 'Action / Aventure / Science Fiction',
+        title: 'Avengers',
+        note: 4.3,
+        gender: 'Action / Aventure',
         description: `Après leur défaite face au Titan Thanos qui dans le film précédent s'est approprié
           toutes les pierres du Gant de l'infini , les Avengers et les Gardiens de la Galaxie
           ayant survécu à son claquement de doigts qui a pulvérisé « la moitié de toute forme
