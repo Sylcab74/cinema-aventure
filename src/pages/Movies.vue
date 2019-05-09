@@ -1,6 +1,7 @@
 <template>
     <div style="background-color: #555;">
         <HeaderComponent />
+
         <MovieComponent :showMore="true" />
         <SliderComponent />
     </div>

@@ -505,8 +505,6 @@ div[data-glide-el="controls"] {
     top: 40%;
 }
 
-
-
 button[data-glide-dir="<"], button[data-glide-dir=">"] {
     position: absolute;
     border: 0;
@@ -525,6 +523,78 @@ button[data-glide-dir=">"] {
 
 /* END OF A SINGLE MOVIE */ 
 
+/* Part our partners */
+
+.page-title{
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.separator{
+    width: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.partners{
+    display: flex;
+    justify-content : space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.partner{
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.partner .title{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.partner .description{
+    padding: 0 10px;
+}
+
+.partner img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* end of partners */
+
+/*Page form movie */
+
+.register form{
+    margin: 30px;
+}
+
+.register form input[type="text"],.register form input[type="number"],.register form textarea{
+    display: block;
+}
+
+.register form input[type="text"],.register form input[type="number"],.register form textarea{
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.register form .required{
+    color: red;
+}
+
+.register form input[type="submit"]{
+   background-color:  #2E2727;
+   border: #2E2727;
+   color: #fff;
+   border-radius: 5px;
+   display: block;
+   margin : 0 auto;
+   padding: 5px 10px;
+}
+
+/*End of form movie */
 /* Modal page movie */
 
 .modal {

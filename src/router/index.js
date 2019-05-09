@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Vuex from 'vuex';
 import Home from '@/pages/Home';
+import RegisterMovies from '@/pages/RegisterMovies';
 import Events from '@/pages/Events';
 import Movies from '@/pages/Movies';
 import Movie from '@/pages/Movie';
@@ -58,6 +59,21 @@ export default new Router({
       path: '/events',
       name: 'Events',
       component: Events,
+    },
+    {
+      path: '/movies',
+      name: 'Movies',
+      component: Movies,
+    },
+    {
+      path: '/partners',
+      name: 'Partners',
+      component: Partners,
+    },
+    {
+      path: '/register',
+      name: 'RegisterMovies',
+      component: RegisterMovies,
     },
   ],
   mode: 'history',

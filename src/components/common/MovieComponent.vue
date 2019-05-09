@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <div v-if="!single" class="movie">
         <div class="trailer" >
           <video controls :src="movies[id].trailer">Trailer {{movies[id].title}}</video>
