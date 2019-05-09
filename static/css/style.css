@@ -217,6 +217,12 @@ h4{
     color: #FFF;
 }
 
+p{
+    color: #FFF;
+    font-family: 'Halant', serif;
+    font-size: 12px;
+}
+
 .note{
     position: relative;
     width: 40px;
@@ -437,11 +443,156 @@ h4{
     text-transform: capitalize;
 }
 
-
-
 /* END BLOCK ACTUALITIES */
 
+/* BLOCK A SINGLE MOVIE */
 
+.movie{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px;
+    align-items : center;
+}
+
+.trailer{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.trailer video{
+    width: 100%;
+}
+
+.presentation{
+    width: 50%;
+}
+
+.presentation .note{
+    padding: 5px;
+}
+
+.presentation h2{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.presentation .genre{
+    font-style: italic;
+    margin-bottom : 10px;
+}
+
+.presentation .synopsis{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+ul.glide__slides{
+    margin: 0 30px;
+}
+
+li.glide__slide{
+   margin-right: 15px !important; 
+}
+
+.glide__slide--active {
+    background-color: #497cdd !important;
+}
+
+div[data-glide-el="controls"] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+}
+
+button[data-glide-dir="<"], button[data-glide-dir=">"] {
+    position: absolute;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #eee;
+    opacity: .3;
+    color: #000;
+    cursor: pointer;
+}
+
+button[data-glide-dir=">"] {
+    right: 5px;
+}
+
+/* END OF A SINGLE MOVIE */ 
+
+/* Modal page movie */
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+ /* Modal Header */
+.modal-header {
+  padding: 2px 5px;
+  background-color: #000;
+  color: white;
+}
+
+.modal-header h2{
+    margin : 10px 0;
+    text-decoration: none;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 10px 16px;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.modal-content .modal-body p{
+    color: #000;
+}
+
+.modal-content .close{
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+} 
+
+/* End modal */
 
 
 
