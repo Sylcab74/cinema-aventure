@@ -6,6 +6,8 @@ import Movies from '@/pages/Movies';
 import Movie from '@/pages/Movie';
 import Partners from '@/pages/Partners';
 import VueGlide from 'vue-glide-js';
+import Access from '@/pages/Access';
+
 import 'vue-glide-js/dist/vue-glide.css';
 
 Vue.use(Router);
@@ -28,6 +30,11 @@ export default new Router({
       path: '/movie/:id',
       name: 'Movie',
       component: Movie,
+    },
+    {
+      path: '/access',
+      name: 'Access',
+      component: Access,
     },
     {
       path: '*',
