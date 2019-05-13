@@ -1,5 +1,5 @@
 <template>
-    <div style="background-color: #555;">
+    <div style="background-color: #555;position: relative">
         <HeaderComponent />
         <EventComponent />
         <FooterComponent/>

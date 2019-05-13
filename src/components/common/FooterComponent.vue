@@ -49,19 +49,19 @@ export default {
         {
           id: 1,
           link: '#',
-          src: './static/images/facebookLogo.svg',
+          src: '/static/images/facebookLogo.svg',
           alt: 'Facebook',
         },
         {
           id: 2,
           link: '#',
-          src: './static/images/twitterLogo.svg',
+          src: '/static/images/twitterLogo.svg',
           alt: 'Twitter',
         },
         {
           id: 3,
           link: '#',
-          src: './static/images/youtubeLogo.svg',
+          src: '/static/images/youtubeLogo.svg',
           alt: 'Youtube',
         },
       ],

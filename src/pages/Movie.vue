@@ -3,7 +3,7 @@
         <HeaderComponent />
         <MovieComponent :like="true" :active="$route.params.id" :single="true"/>
         <StaffComponent :movie="$route.params.id"/>
-        <a href="/movies">Voir tous les films</a>
+        <a class="link-movies" href="/movies">Voir tous les films</a>
         <FooterComponent/>
     </div>
 </template>
